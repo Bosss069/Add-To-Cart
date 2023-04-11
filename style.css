@@ -3,11 +3,9 @@
     font-family: cursive;
 }
 .container{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: max-content;
 }
 .card{
     /* border: 1px solid black; */
@@ -15,9 +13,10 @@
     text-align: center;
     display: inline-block;
     margin: 5px;
+    border: 1px solid black;
 }
 .card img{
-    width:300px;
+    width:200px;
     padding:5px;
 }
 
@@ -35,4 +34,7 @@
     background: yellow;
     width: 100%;
 }
-.cartImg{border-bottom:2px solid black;}
+.cartImg{
+    border:2px solid black;
+    margin: 5px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoping cart</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="card" id="item1">
+      <img src="images/chesis.png" alt="">
+      <div class="title">Chesis</div>
+      <div>
+        <label>COLOUR : </label>
+        <select>
+          <option>black</option>
+          <option>white</option>
+          <option>wellow</option>
+          <option>blue</option>
+        </select>
+      </div>
+      <button onclick="addToCart(item1)">Add To Cart</button>
+    </div>
+
+    <div class="card" id="item2">
+      <img src="images/LIPO Battery.png" alt="">
+      <div class="title">Battery</div>
+      <div>
+        <label>CAPACITY : </label>
+        <select>
+          <option>1000 mAh</option>
+          <option>2000 mAh</option>
+          <option>2500 mAh</option>
+          <option>10000 mAh</option>
+        </select>
+      </div>
+      <button onclick="addToCart(item2)">Add To Cart</button>
+    </div>
+    
+  </div>
+
+  <div class="cart" id="cart">
+    <div class="title">CART</div>
+    <hr>
+    <div id="title"></div>
+  </div>
+
+</body>
+
+</html>
